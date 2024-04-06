@@ -3,11 +3,11 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "sandbox"
+name = "sandbox_dev"
 authors = [{name = "Matthew Kent Regalado", email = "mkentregalado@gmail.com"}]
 readme = "README.md"
 dynamic = ["version", "description"]
-requires-python = "3.11"
+requires-python = "~=3.11"
 dependencies = [
     "pandas == 3.11",
     "polars == 0.20.18",
@@ -17,4 +17,4 @@ dependencies = [
 Home = "https://github.com/kentregs/sandbox"
 
 [tool.flit.sdist]
-exclude = ["sandbox-venv*"]
+exclude = ["sandbox-venv*", "dist/"]
